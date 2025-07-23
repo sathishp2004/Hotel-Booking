@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Of Love - Natural Forest Hotel Booking</title>
+    <meta name="description" content="Book your stay at Home Of Love, a natural forest hotel offering peaceful accommodations surrounded by beautiful nature.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-tree"></i>
+                <h2>Home Of Love</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#rooms" class="nav-link">Rooms</a></li>
+                <li><a href="#amenities" class="nav-link">Amenities</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#booking" class="nav-link btn-book">Book Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Image Slider -->
+    <section id="home" class="hero">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('./image/img1/image5.jpg')">
+                <div class="slide-content">
+                    <h1>Welcome to <span class="highlight">Home Of Love</span></h1>
+                    <p>Experience tranquility in our natural forest retreat</p>
+                    <a href="#booking" class="btn btn-primary">Book Your Stay</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('./image/img2/image6.jpg')">
+                <div class="slide-content">
+                    <h1>Embrace <span class="highlight">Nature's Beauty</span></h1>
+                    <p>Surrounded by lush forests and peaceful wildlife</p>
+                    <a href="#rooms" class="btn btn-primary">Explore Rooms</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('./image/img3/img2.jpg')">
+                <div class="slide-content">
+                    <h1>Find Your <span class="highlight">Perfect Escape</span></h1>
+                    <p>Luxury accommodations in harmony with nature</p>
+                    <a href="#amenities" class="btn btn-primary">Discover More</a>
+                </div>
+            </div>
+        </div>
+        
+        Slider Navigation
+        <div class="slider-nav">
+            <button class="slider-btn prev-btn" id="prevBtn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slider-btn next-btn" id="nextBtn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        
+        <!-- Slider Dots -->
+        <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+    </section>
+
+    <!-- Quick Booking Bar -->
+    <section class="quick-booking">
+        <div class="container">
+            <form class="booking-form-quick">
+                <div class="form-group">
+                    <label>Check-in</label>
+                    <input type="date" id="checkin" name="checkin" required>
+                </div>
+                <div class="form-group">
+                    <label>Check-out</label>
+                    <input type="date" id="checkout" name="checkout" required>
+                </div>
+                <div class="form-group">
+                    <label>Guests</label>
+                    <select id="guests" name="guests" required>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5+ Guests</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Search Rooms</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Home Of Love</h2>
+                    <h3>Your Natural Forest Sanctuary</h3>
+                    <p>Nestled deep within pristine forest landscapes, Home Of Love offers an unparalleled escape from the hustle and bustle of city life. Our eco-friendly hotel harmoniously blends luxury accommodations with the raw beauty of nature.</p>
+                    <p>Wake up to the gentle sounds of birds chirping, breathe in the fresh forest air, and let the peaceful ambiance rejuvenate your soul. Every room offers stunning views of the surrounding woodland, creating an intimate connection with nature.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <span>Eco-Friendly</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-spa"></i>
+                            <span>Wellness Focused</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-mountain"></i>
+                            <span>Nature Immersion</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="./image/img3/img10.jpg" alt="Home Of Love Forest Hotel" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="rooms">
+        <div class="container">
+            <h2 class="section-title">Our Forest Rooms</h2>
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <img src="./image/img1/image5.jpg" alt="Forest Suite" class="room-image">
+                    <div class="room-content">
+                        <h3>Forest Suite</h3>
+                        <p>Luxury suite with panoramic forest views and private balcony</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-bed"></i> King Bed</span>
+                            <span><i class="fas fa-bath"></i> Private Bath</span>
+                            <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                        </div>
+                        <div class="room-price">₹9999/night</div>
+                        <button class="btn btn-primary room-btn">Book Now</button>
+                    </div>
+                </div>
+                
+                <div class="room-card">
+                    <img src="./image/img2/image6.jpg" alt="Treehouse Cabin" class="room-image">
+                    <div class="room-content">
+                        <h3>Treehouse Cabin</h3>
+                        <p>Unique elevated cabin experience among the treetops</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-bed"></i> Queen Bed</span>
+                            <span><i class="fas fa-hot-tub"></i> Hot Tub</span>
+                            <span><i class="fas fa-fire"></i> Fireplace</span>
+                        </div>
+                        <div class="room-price">₹6999/night</div>
+                        <button class="btn btn-primary room-btn">Book Now</button>
+                    </div>
+                </div>
+                
+                <div class="room-card">
+                    <img src="./image/img3/img2.jpg" alt="Nature Cottage" class="room-image">
+                    <div class="room-content">
+                        <h3>Nature Cottage</h3>
+                        <p>Cozy cottage perfect for couples seeking intimacy with nature</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-bed"></i> Double Bed</span>
+                            <span><i class="fas fa-coffee"></i> Kitchenette</span>
+                            <span><i class="fas fa-tree"></i> Garden View</span>
+                        </div>
+                        <div class="room-price">₹4999/night</div>
+                        <button class="btn btn-primary room-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="amenities">
+        <div class="container">
+            <h2 class="section-title">Hotel Amenities</h2>
+            <div class="amenities-grid">
+                <div class="amenity-item">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Forest Restaurant</h3>
+                    <p>Farm-to-table dining with organic local ingredients</p>
+                </div>
+                <div class="amenity-item">
+                    <i class="fas fa-spa"></i>
+                    <h3>Nature Spa</h3>
+                    <p>Rejuvenating treatments inspired by forest therapy</p>
+                </div>
+                <div class="amenity-item">
+                    <i class="fas fa-hiking"></i>
+                    <h3>Hiking Trails</h3>
+                    <p>Guided nature walks and hiking adventures</p>
+                </div>
+                <div class="amenity-item">
+                    <i class="fas fa-fire"></i>
+                    <h3>Campfire Evenings</h3>
+                    <p>Cozy bonfire gatherings under the stars</p>
+                </div>
+                <div class="amenity-item">
+                    <i class="fas fa-binoculars"></i>
+                    <h3>Wildlife Watching</h3>
+                    <p>Observe local wildlife in their natural habitat</p>
+                </div>
+                <div class="amenity-item">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Yoga Pavilion</h3>
+                    <p>Morning yoga sessions in our forest pavilion</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="./image/img2/image10.jpg" alt="Forest View" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="./image/img1/image2.jpg" alt="Hotel Exterior" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="./image/img1/image4.jpg" alt="Room Interior" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="./image/img3/img5.jpg" alt="Dining Area" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="./image/img3/img7.jpg" alt="Spa Area" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="./image/img2/image20.jpg" alt="Nature Trail" class="gallery-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 class="section-title">Book Your Stay</h2>
+            <div class="booking-content">
+                <div class="booking-info">
+                    <h3>Reserve Your Forest Escape</h3>
+                    <p>Experience the magic of Home Of Love with our easy booking system. Choose your dates, select your perfect room, and prepare for an unforgettable natural retreat.</p>
+                    <div class="booking-features">
+                        <div class="booking-feature">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Easy Booking Process</span>
+                        </div>
+                        <div class="booking-feature">
+                            <i class="fas fa-times-circle"></i>
+                            <span>Free Cancellation</span>
+                        </div>
+                        <div class="booking-feature">
+                            <i class="fas fa-headset"></i>
+                            <span>24/7 Support</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="booking-form" id="bookingForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="checkinDate">Check-in Date</label>
+                            <input type="date" id="checkinDate" name="checkinDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkoutDate">Check-out Date</label>
+                            <input type="date" id="checkoutDate" name="checkoutDate" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="roomType">Room Type</label>
+                            <select id="roomType" name="roomType" required>
+                                <option value="">Select Room Type</option>
+                                <option value="forest-suite">Forest Suite - ₹9999/night</option>
+                                <option value="treehouse-cabin">Treehouse Cabin - ₹6999/night</option>
+                                <option value="nature-cottage">Nature Cottage - ₹4999/night</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="guestCount">Number of Guests</label>
+                            <select id="guestCount" name="guestCount" required>
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5">5+ Guests</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="specialRequests">Special Requests</label>
+                        <textarea id="specialRequests" name="specialRequests" rows="3" placeholder="Any special requests or requirements..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">Complete Booking</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>526 Mazhavanthanagl Main Road, Villupuram Tamil Nadu</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 6381229613-LOVE</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>sathishp6381@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Check-in/Out</h4>
+                            <p>Check-in: 3:00 PM | Check-out: 11:00 AM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="contactEmail" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-tree"></i>
+                        <h3>Home Of Love</h3>
+                    </div>
+                    <p>Your natural forest sanctuary where luxury meets wilderness. Experience tranquility like never before.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#rooms">Rooms & Suites</a></li>
+                        <li><a href="#amenities">Amenities</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#booking">Book Now</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Forest Restaurant</a></li>
+                        <li><a href="#">Nature Spa</a></li>
+                        <li><a href="#">Hiking Tours</a></li>
+                        <li><a href="#">Wildlife Watching</a></li>
+                        <li><a href="#">Yoga Classes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> 526 Mazhavanthanagl Main Road, Villupuram Tamil Nadu</p>
+                        <p><i class="fas fa-phone"></i> +91 6381229613-LOVE</p>
+                        <p><i class="fas fa-envelope"></i> sathishp6381@gmail.com</p>
+                    </div>
+                    <div class="footer-newsletter">
+                        <h5>Newsletter</h5>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email" required>
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Home Of Love Forest Hotel. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Cancellation Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
